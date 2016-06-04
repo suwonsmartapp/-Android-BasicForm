@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="@android:color/white"-->
+    <!--app:layout_behavior="@string/bottom_sheet_behavior"-->
+    <!--app:behavior_peekHeight="180dp"-->
+    <!--tools:context="com.suwonsmartapp.basicform.ScrollingActivity"-->
+    <!--tools:showIn="@layout/activity_scrolling">-->
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_margin="30sp"-->
+        <!--android:orientation="vertical">-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textSize="30sp"-->
+            <!--android:text="Junsuk님, 안녕하세요"/>-->
+        <!--<TextView-->
+            <!--android:text="WCT에서 원하는 강좌를 골라보고 외국인 처럼 대화 해 보세요"-->
+            <!--android:textSize="22sp"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+        <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_marginTop="50sp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:text="@string/large_text" />&ndash;&gt;-->
+
+    <!--</LinearLayout>-->
+
+
+<!--</android.support.v4.widget.NestedScrollView>-->
+
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frag_main_scroll"
+    android:name="com.suwonsmartapp.basicform.fragment.ItemFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:behavior_peekHeight="180dp"
+    app:layout_behavior="@string/bottom_sheet_behavior"
+    tools:context="com.suwonsmartapp.basicform.ScrollingActivity"
+    tools:layout="@layout/fragment_item_list"
+    tools:showIn="@layout/activity_scrolling" />
